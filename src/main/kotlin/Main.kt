@@ -23,6 +23,14 @@ fun main() {
             "3" -> {
                 print("Enter integer for factorial calculation: ")
 
+                // **************************************
+                // VALIDATION TO BE ADDED
+                // 1 - INPUT TO BE A NUMBER
+                // 2 - INPUT TO BE GREATER THAN 0
+                // **************************************
+                //val l : Int = readLine()!!.toInt()
+                //println(factorial(l))
+
             }
 
             "4" -> {
