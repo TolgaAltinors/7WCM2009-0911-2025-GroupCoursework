@@ -1,5 +1,10 @@
 import kotlin.math.pow
 
+/**
+ * Function to calculate the sum of cubes of a natural number.
+ * @param number is a natural number greater than zero i.e 1,2,3,4...n.
+ * @param sum returns the sum of the cubes. Returns string due to validation handled within the function.
+ */
 
 fun sum(number: Int?): String {
     if(number == null) return "Please enter a valid positive number without a decimal value";
