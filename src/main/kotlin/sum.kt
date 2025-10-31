@@ -14,9 +14,9 @@ fun sum(number: Int?): String {
         if(numberDataType != "Int") return "Number must be without a fractional number"
     }
 
-    var sum: Double = 0.0 //declare the sum of the computation as Double
+    var sumOfNaturalNumbers: Double = 0.0 //declare the sum of the computation as Double
     for(i in 1..number) {//Iterate through from 1 to the natural number entered by the user
-        sum +=  i.toDouble().pow(3) //convert the current iteration to double to use the power function
+        sumOfNaturalNumbers +=  i.toDouble().pow(3) //convert the current iteration to double to use the power function
     }
-    return sum.toLong().toString() //convert the final computed sum to string based on the return data type of the function
+    return sumOfNaturalNumbers.toLong().toString() //convert the final computed sum to string based on the return data type of the function
 }
