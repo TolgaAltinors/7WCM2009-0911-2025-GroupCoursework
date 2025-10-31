@@ -9,9 +9,17 @@ fun main() {
         when (input) {
             "1" -> {
                 print("Enter integer to calculate the sum: ")
-                val number : Int = readln().toInt()
-                val totalValue: Double = sum(number)
-                println("The sum is $totalValue")
+                val number : Int? = readln().toIntOrNull()
+                if (number == null) {
+                    println("Invalid input. Please enter a valid integer.")
+                    continue
+                }
+                //val totalValue: Double = sum(number)
+                val totalValue: String = sum(number)
+                if(totalValue.toIntOrNull() == null)
+                    println(totalValue)
+                else
+                    println("The sum is $totalValue")
 
             }
 
