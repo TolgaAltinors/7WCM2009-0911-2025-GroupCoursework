@@ -9,6 +9,9 @@ fun main() {
         when (input) {
             "1" -> {
                 print("Enter integer to calculate the sum: ")
+                val number : Int = readln().toInt()
+                val totalValue: Double = sum(number)
+                println("The sum is $totalValue")
 
             }
 
