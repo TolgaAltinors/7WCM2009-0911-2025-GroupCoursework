@@ -11,7 +11,7 @@ class TemperatureTest {
     @Test
     fun testInvalidUnit() {
         val result = convertTemperature(100.0, 'x')
-        assertEquals("Unit can only be in celcius, farenheit or kelvin", result)
+        assertEquals("Unit can only be in celsius, fahrenheit or kelvin", result)
     }
 
     @Test
@@ -23,12 +23,12 @@ class TemperatureTest {
     @Test
     fun testCelsiusConversion() {
         val result = convertTemperature(100.0, 'c')
-        assertEquals("farenheit conversion is 212.0 and kelvin conversion is 373.15", result)
+        assertEquals("fahrenheit conversion is 212.0 and kelvin conversion is 373.15", result)
     }
 
     @Test
     fun testKelvinConversion() {
         val result = convertTemperature(273.15, 'k')
-        assertEquals("farenheit conversion is 32.0 and celcius conversion is 0.0", result)
+        assertEquals("fahrenheit conversion is 32.0 and celsius conversion is 0.0", result)
     }
 }
