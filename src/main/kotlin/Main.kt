@@ -24,7 +24,7 @@ fun main() {
             }
 
             "2" -> {
-                print("Enter unit to convert from use f for farenheit, c for celcius and k for kelvin: ")
+                print("Enter unit to convert from use f for fahrenheit, c for celsius and k for kelvin: ")
                 val unit: Char? = readln().lowercase().firstOrNull();
                 if (unit == null) {
                     println("Unit cannot be empty. Please try again.")
