@@ -51,7 +51,7 @@ fun main() {
 
             "2" -> {
                 // List of allowed temperature units
-                val validUnits = listOf("C", "F", "K")
+                val validUnits = listOf('C', 'F', 'K')
                 tempConvertLoop@ while(true){
                     print("Enter a temperature value: ")
                     val number = readln().toDoubleOrNull()
@@ -60,18 +60,18 @@ fun main() {
                     if(number != null){
                         while(true){
                             print("Select unit to convert from (C,F,K): ")
-                            val unitFrom = readln().trim().uppercase()
+                            val unitFrom = readln().trim().uppercase().firstOrNull();
 
                             // Validate unit
                             if(unitFrom in validUnits){
                                 // Kelvin cannot be negative
-                                if(unitFrom == "K" && number < 0) {
+                                if(unitFrom == 'K' && number < 0) {
                                     println("Kelvin can not be negative.")
                                     continue
                                 }
                                 while (true) {
                                     print("Select unit to convert to: ")
-                                    val unitTo = readln().trim().uppercase()
+                                    val unitTo = readln().trim().uppercase().firstOrNull();
 
                                     // Validate conversion unit
                                     if (unitTo in validUnits) {
