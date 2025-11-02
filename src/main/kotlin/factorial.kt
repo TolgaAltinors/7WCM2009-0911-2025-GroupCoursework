@@ -19,6 +19,10 @@ fun factorial(n1: Int, n2: Int, n3: Int): String {
         return tempResult
     }
 
+    if (n1 <= 0 || n2 <= 0 || n3 <= 0 ) {
+        return "Numbers provided failed validation. Parameters require to be greater than ZERO."
+    }
+
     // Create list of numbers passed to function
     val numbers = listOf(n1, n2, n3)
 
@@ -27,7 +31,6 @@ fun factorial(n1: Int, n2: Int, n3: Int): String {
 
     try {
         // Loop for creating the sum
-
         for (j in numbers) {
 
             val result = calculateFactorial(j)
@@ -38,7 +41,7 @@ fun factorial(n1: Int, n2: Int, n3: Int): String {
             println("Factorial running total is: $factorialTotal")
         }
 
-        return "Factorial of $n1 + $n2 + $n3 is: $factorialTotal"
+        return "Factorial of $n1! + $n2! + $n3! is: $factorialTotal"
 
     }
     catch (e: Exception) {

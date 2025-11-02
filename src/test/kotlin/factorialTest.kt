@@ -5,17 +5,12 @@ class FactorialTest {
 
     @Test
     fun testNumberGreaterThanZero() {
-        assertEquals<String>("Factorial of 5 is: 120", factorial(5))
+        assertEquals<String>("Factorial of 2! + 3! + 4! is: 32", factorial(2, 3, 4))
     }
 
     @Test
-    fun testNumberEqualToZero() {
-        assertEquals<String>("Number provided failed validation: 0 not greater than Zero", factorial(0))
-    }
-
-    @Test
-    fun testNumberLessThanZero() {
-        assertEquals<String>("Number provided failed validation: -1 not greater than Zero", factorial(-1))
+    fun testNumberLessThanOrEqualToZero() {
+        assertEquals<String>("Numbers provided failed validation. Parameters require to be greater than ZERO.", factorial(0, 0, 0))
     }
 
 }
