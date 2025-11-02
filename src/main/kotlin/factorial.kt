@@ -31,16 +31,17 @@ fun factorial(n1: Int, n2: Int, n3: Int): String {
 
     try {
         // Loop for creating the sum
-        for (j in numbers) {
+        for ((index, j) in numbers.withIndex()) {
 
             val result = calculateFactorial(j)
 
-            println("Factorial of $j is: $result")
+            println("Number $index: Factorial of $j is: $result")
 
             factorialTotal += result
             println("Factorial running total is: $factorialTotal")
+            println("***************************************************")
         }
-
+        println("***************************************************")
         return "Factorial of $n1! + $n2! + $n3! is: $factorialTotal"
 
     }
