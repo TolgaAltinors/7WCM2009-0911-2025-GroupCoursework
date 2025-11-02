@@ -35,7 +35,7 @@ fun factorial(n1: Int, n2: Int, n3: Int): String {
 
             val result = calculateFactorial(j)
 
-            println("Number $index: Factorial of $j is: $result")
+            println("Number {$index + 1}: Factorial of $j is: $result")
 
             factorialTotal += result
             println("Factorial running total is: $factorialTotal")
