@@ -116,6 +116,7 @@ fun main() {
                                     if (number3 != null && number3 >= 0) {
                                         // Call factorial function with three values
                                         println(factorial(number, number2, number3))
+                                        println("")
                                         break@factorialLoop
                                     } else {
                                         println("Invalid 3rd number input. Please enter a non-negative integer.")

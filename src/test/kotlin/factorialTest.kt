@@ -9,8 +9,13 @@ class FactorialTest {
     }
 
     @Test
-    fun testNumberLessThanOrEqualToZero() {
-        assertEquals<String>("Numbers provided failed validation. Parameters require to be greater than ZERO.", factorial(0, 0, 0))
+    fun testNumberWithZero() {
+        assertEquals<String>("Factorial of 0! + 3! + 4! is: 31", factorial(0, 3, 4))
     }
+
+    //@Test
+    //fun testNumberLessThanOrEqualToZero() {
+    //    assertEquals<String>("Numbers provided failed validation. Parameters require to be greater than ZERO.", factorial(0, 0, 0))
+    //}
 
 }
