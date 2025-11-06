@@ -5,7 +5,7 @@ class SumTest {
 
     @Test
     fun testPositiveResult() {
-        assertEquals<String>("36.0", sum(3))
+        assertEquals<String>("36", sum(3))
     }
 
     @Test
