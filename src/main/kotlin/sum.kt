@@ -11,7 +11,7 @@ fun sum(number: Int): String {
         if(number < 1) return "Number cannot be less than 1"
         var sumOfNaturalNumbers: Double = 0.0 //declare the sum of the computation as Double
         for(i in 1..number) {//Iterate through from 1 to the natural number (inclusive) entered by the user
-            sumOfNaturalNumbers +=  i.toDouble().pow(3) //convert the current iteration to double to use the power function
+            sumOfNaturalNumbers +=  i.toDouble().pow(3) //convert the current iteration to double to use the power function and add to the previous sum
         }
         return sumOfNaturalNumbers.toLong().toString() //convert the final computed sum to string based on the return data type of the function
     }
