@@ -5,11 +5,11 @@ class SumTest {
 
     @Test
     fun testPositiveResult() {
-        assertEquals<String>("36", sum(3))
+        assertEquals<Long>(36, sumCubes(3))
     }
 
     @Test
     fun testNegativeResult() {
-        assertEquals<String>("Number cannot be less than 1", sum(-3))
+        assertEquals<Long>(0, sumCubes(-3))
     }
 }
