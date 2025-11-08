@@ -3,16 +3,16 @@ import kotlin.math.pow
 /**
  * Function to calculate the sum of cubes of a natural number.
  * @param number is a natural number greater than zero i.e 1,2,3,4...n.
- * @param sum returns the sum of the cubes. Returns string due to validation handled within the function.
+ * @param sum returns the sum of the cubes. Returns a Long value.
  */
 
 fun sumCubes(number: Int): Long {
     try {
-        var sumCubesOfNaturalNumbers: Double = 0.0 //declare the sum of the computation as Double
+        var sumCubesOfNaturalNumbers: Double = 0.0 //declare and initialize the sumCubesOfNaturalNumbers of the computation as Double
         for(i in 1..number) {//Iterate through from 1 to the natural number (inclusive) entered by the user
-            sumCubesOfNaturalNumbers +=  i.toDouble().pow(3) //convert the current iteration to double to use the power function and add to the previous sum
+            sumCubesOfNaturalNumbers +=  i.toDouble().pow(3) //convert the current iteration to double to use the power function and add to the previous sumCubesOfNaturalNumbers
         }
-        return sumCubesOfNaturalNumbers.toLong() //convert the final computed sum to string based on the return data type of the function
+        return sumCubesOfNaturalNumbers.toLong() // returns the calculated sum of cubes
     }
     catch(e: Exception){
         println("Unexpected error: ${e.message}")
