@@ -40,7 +40,7 @@ fun main() {
                     val number = readln().toIntOrNull()
                     if(number != null && number > 0){
                         // Call sum function and print result
-                        println(sum(number))
+                        println(sumCubes(number))
                         break
                     }else{
                         println("Invalid input. Please enter a number greater than zero.")
