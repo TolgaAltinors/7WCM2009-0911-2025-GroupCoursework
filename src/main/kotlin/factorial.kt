@@ -1,23 +1,24 @@
 import java.math.BigInteger
+
+/**
+ * Calculate the factorial of passed integer
+ * @param n
+ * @return the factorial of n as Long data type
+ */
+fun calculateFactorial(n: Int): BigInteger {
+    var tempResult = BigInteger.ONE
+    for (i in 2..n) {
+        tempResult = tempResult.multiply(BigInteger.valueOf(i.toLong()))
+    }
+    return tempResult
+}
+
 /**
  * Compute the factorial of user input
  * @param n1, n2, n3 greater than or equal to 0.
  * @return the factorial of n as part of a string.
  */
 fun factorial(n1: Int, n2: Int, n3: Int): String {
-
-    /**
-     * Calculate the factorial of user input
-     * @param n
-     * @return the factorial of n
-     */
-    fun calculateFactorial(n: Int): BigInteger {
-        var tempResult = BigInteger.ONE
-        for (i in 2..n) {
-            tempResult = tempResult.multiply(BigInteger.valueOf(i.toLong()))
-        }
-        return tempResult
-    }
 
     // Create list of numbers passed to function
     val numbers = listOf(n1, n2, n3)
