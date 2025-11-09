@@ -16,6 +16,6 @@ fun sumCubes(number: Int): Long {
     }
     catch(e: Exception){
         println("Unexpected error: ${e.message}")
-        return 0
+        return 0 //safely return zero
     }
 }
