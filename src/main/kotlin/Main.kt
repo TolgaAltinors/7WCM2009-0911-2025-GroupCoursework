@@ -34,9 +34,9 @@ fun main() {
 
         when (input) {
             "1" -> {
-                // Loop for validating sum number input
+                // Loop for validating sum of cubes number input
                 while(true) {
-                    print("Enter integer to calculate the sum: ")
+                    print("Enter integer to calculate the sum of cubes: ")
                     val number = readln().toIntOrNull()
                     if(number != null && number > 0){
                         // Call sum function and print result
