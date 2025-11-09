@@ -28,7 +28,7 @@ fun main() {
     // Main program loop - keeps running until user chooses to exit
     while (true) {
         // Display the main operation menu
-        println("Please select desired operation:\n1 - Perform sum of a given number\n2 - Perform temperature conversion\n3 - Perform factorial calculation\n4 - Exit")
+        println("Please select desired operation:\n1 - Perform sum of cubes on a given number\n2 - Perform temperature conversion\n3 - Perform factorial calculation\n4 - Exit")
         print("> ")
         val input = readln().trim().lowercase()
 
